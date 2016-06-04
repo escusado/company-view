@@ -1,7 +1,9 @@
 class UserTile extends NanoWidget {
 
   constructor (config) {
-    super();
+    super(config);
+
+    this.config = config;
 
     var template = '';
 
@@ -20,7 +22,6 @@ class UserTile extends NanoWidget {
         </div>
     `;
 
-
     template = config.lessons.map(function (workshop) {
       return '<div class="workshop-title">'+workshop+'</div>';
     }).join('');
@@ -32,5 +33,14 @@ class UserTile extends NanoWidget {
 
     this.element.innerHTML = this.template;
 
+    this._bindEvents();
+  }
+
+  _bindEvents () {
+    this.element.addEventListener('click', this._handleClick.bind(this));
+  }
+
+  _handleClick () {
+    app.dispatch('show-user-modal', this.config);
   }
 }

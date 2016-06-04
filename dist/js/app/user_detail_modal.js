@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -8,34 +8,33 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var App = function (_NanoWidget) {
-  _inherits(App, _NanoWidget);
+var UserDetailModal = function (_NanoWidget) {
+  _inherits(UserDetailModal, _NanoWidget);
 
-  function App() {
-    _classCallCheck(this, App);
-
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(App).apply(this, arguments));
-  }
-
-  _createClass(App, [{
-    key: "_getHTML",
+  _createClass(UserDetailModal, [{
+    key: '_getHTML',
     value: function _getHTML() {
-      return "\n      <div class=\"app\">\n      </div>\n    ";
-    }
-  }, {
-    key: "setup",
-    value: function setup() {
-      this.sidebar = new Sidebar();
-      this.sidebar.render(this.element);
-
-      this.content = new Content();
-      this.content.render(this.element);
-      this.content.setup();
-
-      this.userDetailModal = new UserDetailModal();
-      this.userDetailModal.render(this.element);
+      return '\n        <div class="user-detail-modal">\n          sup\n        </div>\n    ';
     }
   }]);
 
-  return App;
+  function UserDetailModal() {
+    _classCallCheck(this, UserDetailModal);
+
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(UserDetailModal).call(this));
+  }
+
+  _createClass(UserDetailModal, [{
+    key: '_bindEvents',
+    value: function _bindEvents() {
+      app.bind('show-user-modal', this._handleShowUserModal.bind(this));
+    }
+  }, {
+    key: '_handleShowUserModal',
+    value: function _handleShowUserModal() {
+      this.activate();
+    }
+  }]);
+
+  return UserDetailModal;
 }(NanoWidget);

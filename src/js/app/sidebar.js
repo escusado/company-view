@@ -5,7 +5,7 @@ class Sidebar extends NanoWidget {
 
           <div class="logo">
             <a href="#">
-              <img src="/img/logo-left.png" alt="">
+              <img src="/img/Skill_up.svg" alt="">
             </a>
           </div>
           <div class="meta"></div>

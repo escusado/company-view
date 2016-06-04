@@ -13,5 +13,8 @@ class App extends NanoWidget {
     this.content = new Content();
     this.content.render(this.element);
     this.content.setup();
+
+    this.userDetailModal = new UserDetailModal();
+    this.userDetailModal.render(this.element);
   }
 }
