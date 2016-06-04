@@ -16,11 +16,24 @@ html, documentm, body, .app{
     height: 100%;
     background-color: #FFFFFF;
 
-    .logo {
+    .logo img{
       width: 180px;
       padding: 8px;
+      background-size: cover;
     }
 
+    .navigation-item {
+      line-height: 1;
+      padding: 1rem;
+      cursor: pointer;
+      display: block;
+      color: #444;
+    }
+
+    .navigation-item:hover {
+      box-shadow: 4px 0 0 #2980B9;
+      background: #ECF0F1;
+    }
   }
 
   .content{
