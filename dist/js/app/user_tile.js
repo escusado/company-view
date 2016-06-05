@@ -22,7 +22,7 @@ var UserTile = function (_NanoWidget) {
 
     _this.element.classList.add('user-tile');
 
-    _this.template = '\n        <div class="user-background" style="background-image:url({{photo}})"></div>\n        <div class="user-content">\n          <div class="user-name">Daenerys Targaryen</div>\n          <div class="user-thumb">Mechanical Engineer</div>\n          <div class="workshops">\n            <div class="item">\n              {{workshops}}\n            </div>\n          </div>\n        </div>\n    ';
+    _this.template = '\n        <div class="user-background" style="background-image:url({{photo}})"></div>\n        <div class="user-content">\n          <div class="user-name">{{username}}</div>\n          <div class="user-thumb">{{profession}}</div>\n          <div class="workshops">\n            <div class="item">\n              {{workshops}}\n            </div>\n          </div>\n        </div>\n    ';
 
     template = config.lessons.map(function (workshop) {
       return '<div class="workshop-title">' + workshop + '</div>';
@@ -44,7 +44,7 @@ var UserTile = function (_NanoWidget) {
   }, {
     key: '_handleClick',
     value: function _handleClick() {
-      app.dispatch('show-user-modal', this.config);
+      // app.dispatch('show-modal', {data: new UserDetail(this.config)}); 
     }
   }]);
 

@@ -7,48 +7,6 @@ class Content extends NanoWidget {
         <div class="title">User List</div>
         <div class="user-list">
 
-        <!--  <div class="user-tile">
-            <div class="user-background" style="background-image:url(/img/danny.jpg)"></div>
-            <div class="user-content">
-              <div class="user-name">Daenerys Targaryen</div>
-              <div class="user-thumb">Mechanical Engineer</div>
-              <div class="workshops">
-                <div class="item">
-                  <div class="workshop-title">Types of frames for drones</div>
-                  <div class="workshop-title">Motor assembly</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="user-tile">
-            <div class="user-background" style="background-image:url(/img/jon-snow.jpg)"></div>
-            <div class="user-content">
-              <div class="user-name">Jhon Snow</div>
-              <div class="user-thumb">TV Technician</div>
-              <div class="workshops">
-                <div class="item">
-                  <div class="workshop-title">Motor assembly</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="user-tile">
-            <div class="user-background" style="background-image:url(/img/tyrion.jpg)"></div>
-            <div class="user-content">
-              <div class="user-name">Tyrion Lannister</div>
-              <div class="user-thumb">Cobol Engineer</div>
-              <div class="workshops">
-                <div class="item">
-                  <div class="workshop-title">Types of frames for drones</div>
-                  <div class="workshop-title">Motor assembly</div>
-                  <div class="workshop-title">Chassis repair</div>
-                </div>
-              </div>
-            </div>
-          </div>-->
-
         </div>
       </div>
 
@@ -62,7 +20,7 @@ class Content extends NanoWidget {
     var data = [
       {
         username: 'Daenerys Targaryen',
-        profesion: 'Mechanical Engineer',
+        profession: 'Mechanical Engineer',
         photo: '/img/danny.jpg',
         lessons: [
           'Types of frames for drones',
@@ -72,7 +30,7 @@ class Content extends NanoWidget {
       },
       {
         username: 'Jhon Snow',
-        profesion: 'TV Technician',
+        profession: 'TV Technician',
         photo: '/img/jon-snow.jpg',
         lessons: [
           'Types of frames for drones',
@@ -81,7 +39,7 @@ class Content extends NanoWidget {
       },
       {
         username: 'Tyrion Lannister',
-        profesion: 'Cobol Engineer',
+        profession: 'Cobol Engineer',
         photo: '/img/tyrion.jpg',
         lessons: [
           'Types of frames for drones',

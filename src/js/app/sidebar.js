@@ -11,8 +11,12 @@ class Sidebar extends NanoWidget {
           <div class="meta"></div>
 
           <div class="menu">
-            <div class="navigation-item users">Users</div>
-            <div class="navigation-item users">Workshops</div>
+            <div class="navigation-item users">
+              <a href="#">Users</a>
+            </div>
+            <div class="navigation-item users">
+              <a href="#">Workshops</a>
+            </div>
           </div>
 
         </div>

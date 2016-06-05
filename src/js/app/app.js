@@ -7,14 +7,14 @@ class App extends NanoWidget {
   }
 
   setup () {
+    // this.customModal = new CustomModal();
+    // this.customModal.render(this.element);
+
     this.sidebar = new Sidebar();
     this.sidebar.render(this.element);
 
     this.content = new Content();
     this.content.render(this.element);
     this.content.setup();
-
-    this.userDetailModal = new UserDetailModal();
-    this.userDetailModal.render(this.element);
   }
 }

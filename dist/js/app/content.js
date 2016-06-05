@@ -20,7 +20,7 @@ var Content = function (_NanoWidget) {
   _createClass(Content, [{
     key: '_getHTML',
     value: function _getHTML() {
-      return '\n    <div class="content">\n\n      <div class="users-wrapper">\n        <div class="title">User List</div>\n        <div class="user-list">\n\n        <!--  <div class="user-tile">\n            <div class="user-background" style="background-image:url(/img/danny.jpg)"></div>\n            <div class="user-content">\n              <div class="user-name">Daenerys Targaryen</div>\n              <div class="user-thumb">Mechanical Engineer</div>\n              <div class="workshops">\n                <div class="item">\n                  <div class="workshop-title">Types of frames for drones</div>\n                  <div class="workshop-title">Motor assembly</div>\n                </div>\n              </div>\n            </div>\n          </div>\n\n          <div class="user-tile">\n            <div class="user-background" style="background-image:url(/img/jon-snow.jpg)"></div>\n            <div class="user-content">\n              <div class="user-name">Jhon Snow</div>\n              <div class="user-thumb">TV Technician</div>\n              <div class="workshops">\n                <div class="item">\n                  <div class="workshop-title">Motor assembly</div>\n                </div>\n              </div>\n            </div>\n          </div>\n\n          <div class="user-tile">\n            <div class="user-background" style="background-image:url(/img/tyrion.jpg)"></div>\n            <div class="user-content">\n              <div class="user-name">Tyrion Lannister</div>\n              <div class="user-thumb">Cobol Engineer</div>\n              <div class="workshops">\n                <div class="item">\n                  <div class="workshop-title">Types of frames for drones</div>\n                  <div class="workshop-title">Motor assembly</div>\n                  <div class="workshop-title">Chassis repair</div>\n                </div>\n              </div>\n            </div>\n          </div>-->\n\n        </div>\n      </div>\n\n    </div>\n    ';
+      return '\n    <div class="content">\n\n      <div class="users-wrapper">\n        <div class="title">User List</div>\n        <div class="user-list">\n\n        </div>\n      </div>\n\n    </div>\n    ';
     }
   }, {
     key: 'setup',
@@ -29,17 +29,17 @@ var Content = function (_NanoWidget) {
 
       var data = [{
         username: 'Daenerys Targaryen',
-        profesion: 'Mechanical Engineer',
+        profession: 'Mechanical Engineer',
         photo: '/img/danny.jpg',
         lessons: ['Types of frames for drones', 'Motor assembly', 'Chassis repair']
       }, {
         username: 'Jhon Snow',
-        profesion: 'TV Technician',
+        profession: 'TV Technician',
         photo: '/img/jon-snow.jpg',
         lessons: ['Types of frames for drones', 'Chassis repair']
       }, {
         username: 'Tyrion Lannister',
-        profesion: 'Cobol Engineer',
+        profession: 'Cobol Engineer',
         photo: '/img/tyrion.jpg',
         lessons: ['Types of frames for drones', 'Chassis repair']
       }];

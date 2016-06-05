@@ -20,7 +20,7 @@ var Sidebar = function (_NanoWidget) {
   _createClass(Sidebar, [{
     key: "_getHTML",
     value: function _getHTML() {
-      return "\n        <div class=\"sidebar\">\n\n          <div class=\"logo\">\n            <a href=\"#\">\n              <img src=\"/img/Skill_up.svg\" alt=\"\">\n            </a>\n          </div>\n          <div class=\"meta\"></div>\n\n          <div class=\"menu\">\n            <div class=\"navigation-item users\">Users</div>\n            <div class=\"navigation-item users\">Workshops</div>\n          </div>\n\n        </div>\n    ";
+      return "\n        <div class=\"sidebar\">\n\n          <div class=\"logo\">\n            <a href=\"#\">\n              <img src=\"/img/Skill_up.svg\" alt=\"\">\n            </a>\n          </div>\n          <div class=\"meta\"></div>\n\n          <div class=\"menu\">\n            <div class=\"navigation-item users\">\n              <a href=\"#\">Users</a>\n            </div>\n            <div class=\"navigation-item users\">\n              <a href=\"#\">Workshops</a>\n            </div>\n          </div>\n\n        </div>\n    ";
     }
   }]);
 
